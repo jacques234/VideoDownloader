@@ -6,6 +6,7 @@ from tkinter import filedialog, messagebox
 
 import customtkinter as ctk
 
+from . import __version__
 from .download_manager import DownloadManager
 from .ffmpeg import find_ffmpeg
 from .formats import QUALITIES
@@ -109,7 +110,7 @@ class VideoDownloaderApp(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("VideoDownloader - YouTube")
+        self.title(f"VideoDownloader {__version__} - YouTube")
         self.geometry("1000x760")
         self.resizable(False, False)
 
