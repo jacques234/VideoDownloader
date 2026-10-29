@@ -1,0 +1,8 @@
+.venv/
+build/
+dist/
+__pycache__/
+*.py[cod]
+*.spec
+ffmpeg/bin/
+.env
